@@ -17,7 +17,7 @@ socket_cliente.sendto(mensaje.encode(),(direccion_servidor, puerto_servidor))
 
 # Mensaje resibido de nuestro Servidor.
 mensaje_modificado, servidor_addres = socket_cliente.recvfrom(4096)
-print(mensaje_modificado.decode())
+print(mensaje_modificado).decode()
 
 print("Socket Cerrado")
 socket_cliente.close()
